@@ -3,6 +3,7 @@ GEM
   specs:
     mini_magick (3.6.0)
       subexec (~> 0.2.1)
+    newrelic_rpm (3.6.6.147)
     rack (1.5.2)
     rack-protection (1.5.0)
       rack
@@ -18,4 +19,5 @@ PLATFORMS
 
 DEPENDENCIES
   mini_magick
+  newrelic_rpm
   sinatra

@@ -15,4 +15,4 @@ To view the resized image in the browser
 Live @ Heroku
 You can view this application at http://ajohnson-image-resizer.herokuapp.com/
 
-Example: http://ajohnson-image-resizer.herokuapp.com/?url=http://i.imgur.com/KLxTM.jpg&height=500&width=500
+Example: http://ajohnson-image-resizer.herokuapp.com/display/?url=http://i.imgur.com/KLxTM.jpg&height=500&width=500

@@ -1,1 +1,1 @@
-web: bundle exec ruby resizer.rb -p $PORT
+web: bundle exec ruby app/resizer.rb -p $PORT

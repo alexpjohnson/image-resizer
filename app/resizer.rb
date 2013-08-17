@@ -3,9 +3,13 @@ require 'mini_magick'
 
 get '/*' do
 	if request.path_info == '/resizer/display'
-		redirect request.fullpath if request.fullpath != request.path_info
-	elsif request.path_info == 'resizer/download'	
-		redirect request.fullpath if request.fullpath != request.path_info
+		if request.fullpath != request.path_info
+			redirect request.fullpath 
+		end
+	elsif request.path_info == 'resizer/download'
+		if request.fullpath != request.path_info	
+			redirect request.fullpath 
+		end
 	end
 	send_file File.join('public', 'index.html')
 end

@@ -22,7 +22,7 @@ get %r{/(download|display)} do
 			image.resize "#{params[:height]}x#{params[:width]}"
 			f = File.new(image.path)
 			response.headers['content-type'] = "application/octet-stream"
-			attachment("resized-image.#{image.mime_type.split('/')[1]}")
+			attachment("resized-image.#{Time.now.utc.to_i}.#{image.mime_type.split('/')[1]}")
 			response.write(f)
 		end
 	end

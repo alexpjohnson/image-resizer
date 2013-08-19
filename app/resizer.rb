@@ -2,7 +2,7 @@ require 'sinatra'
 require 'mini_magick'
 
 get '/*' do
-	if request.path_info !~ /(download|display|favicon)/
+	if request.path_info !~ /^\/(download|display|favicon)/
 		send_file File.join('public', 'index.html')
 	elsif request.fullpath =~ /(\.gif)/
 		send_file File.join('public', 'error.html')
